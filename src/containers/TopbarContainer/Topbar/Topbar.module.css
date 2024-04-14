@@ -138,10 +138,12 @@
 
 /* Icon component styles */
 .rootMenuIcon {
-  fill: var(--colorGrey700);
+  /* fill: var(--colorGrey700); */
+  fill: var(--marketplaceColor);
 }
 .rootSearchIcon {
-  stroke: var(--colorGrey700);
+  /* stroke: var(--colorGrey700); */
+  stroke: var(--marketplaceColor);
 }
 
 .searchContainer {

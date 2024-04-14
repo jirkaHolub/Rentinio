@@ -2,9 +2,10 @@
 }
 
 .media {
-  width: 100%;
+  width: 40%;
   border-radius: 8px;
   margin-bottom: 0;
+  
 }
 
 .text {
@@ -13,5 +14,15 @@
 
   &:first-child {
     margin-top: 0;
+  }
+
+  h3 {
+    color: rgb(23, 33, 63);
+    font-weight: 700;
+  }
+
+  p {
+    color: #606060;
+    font-weight: 400;
   }
 }
