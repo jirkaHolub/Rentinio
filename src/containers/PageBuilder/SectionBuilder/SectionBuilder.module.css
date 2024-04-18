@@ -4,13 +4,12 @@
 .sectionDetails {
   max-width: var(--contentMaxWidthPages);
   display: grid;
-  justify-content: start;
+  justify-content: center;
   margin: 0 auto;
   padding: 0 32px;
   position: relative;
   
-  grid-template-rows: auto 1fr auto;
-  height: 100%;
+  grid-template-rows: auto auto 1fr;
 
   & h1 + p,
   & h1 + a,
@@ -106,6 +105,10 @@
   }
 }
 
+.sectionDetails:only-child {
+  height: 100%;
+}
+
 .blockContainer {
   padding: 64px 32px 0 32px;
 
@@ -116,7 +119,8 @@
 
 .align {
   text-align: left;
-  justify-self: start;
+  /* justify-self: start; */
+  justify-self: center;
 
   @media (--viewportMedium) {
     text-align: center;
@@ -249,5 +253,13 @@
     font-weight: 400;
     color: #FCFDFB;
     margin-bottom: 18px;
+  }
+}
+
+.darkTheme > div > img {
+  object-fit: cover;
+
+  @media (--viewportMedium) {
+    object-fit: contain;
   }
 }
