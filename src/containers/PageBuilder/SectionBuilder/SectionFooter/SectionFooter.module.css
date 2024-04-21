@@ -48,6 +48,10 @@
   grid-gap: 32px;
 }
 
+.grid > div {
+  text-align: left;
+}
+
 .gridCol1,
 .gridCol2,
 .gridCol3,
