@@ -1,3 +1,5 @@
+@import '../../../../styles/customMediaQueries.css';
+
 .root {
   /* SectionContainer defaults */
   background-size: cover;
@@ -17,4 +19,7 @@
 
 .root:first-of-type {
   height: calc(100vh - 60px);
+  @media (--viewportMedium) {
+    justify-content: flex-start;
+  }
 }

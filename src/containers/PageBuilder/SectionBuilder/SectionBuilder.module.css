@@ -107,6 +107,16 @@
 
 .sectionDetails:only-child {
   height: 100%;
+
+  @media (--viewportMedium) {
+    grid-template-rows: auto auto auto;
+    height: max-content;
+
+    h2, p {
+      text-align: left;
+      justify-self: left;
+    }
+  }
 }
 
 .blockContainer {
@@ -121,11 +131,6 @@
   text-align: left;
   /* justify-self: start; */
   justify-self: center;
-
-  @media (--viewportMedium) {
-    text-align: center;
-    justify-self: center;
-  }
 }
 
 .title {
@@ -258,9 +263,17 @@
 
 .darkTheme > div > img {
   object-fit: cover;
-  object-position: center;
+  object-position: 30%;
 
   @media (--viewportMedium) {
     object-fit: contain;
+    object-position: center bottom;
+  }
+}
+
+.darkTheme > div:last-of-type {
+  padding: 100px 0;
+  @media (--viewportMedium) {
+    padding: 200px 0;
   }
 }
