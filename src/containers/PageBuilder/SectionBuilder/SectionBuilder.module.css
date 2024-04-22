@@ -263,11 +263,11 @@
 
 .darkTheme > div > img {
   object-fit: cover;
-  object-position: 30%;
+  object-position: 40%;
 
   @media (--viewportMedium) {
     object-fit: contain;
-    object-position: center bottom;
+    object-position: 40% center;
   }
 }
 
