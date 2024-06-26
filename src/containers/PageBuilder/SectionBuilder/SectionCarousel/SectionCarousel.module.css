@@ -173,3 +173,10 @@
     }
   }
 }
+
+.media {
+  width: 200% !important;
+  border-radius: 8px;
+  margin-bottom: 0;
+  
+}

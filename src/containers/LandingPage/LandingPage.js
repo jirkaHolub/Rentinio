@@ -14,6 +14,8 @@ import { ASSET_NAME } from './LandingPage.duck';
 const PageBuilder = loadable(() =>
   import(/* webpackChunkName: "PageBuilder" */ '../PageBuilder/PageBuilder')
 );
+import {SectionColumnsVideo} from '../PageBuilder/SectionBuilder';
+
 
 export const LandingPageComponent = props => {
   const { pageAssetsData, inProgress, error } = props;

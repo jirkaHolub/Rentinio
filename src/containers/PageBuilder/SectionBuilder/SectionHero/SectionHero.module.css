@@ -6,20 +6,27 @@
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
+  
   position: relative;
 
   /* Hero specific */
-  /* min-height: 80vh; */
+  min-height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  /* height: calc(100vh - 60px); */
+  height: calc(80vh - 60px);
 }
 
 .root:first-of-type {
-  height: calc(100vh - 60px);
+  
   @media (--viewportMedium) {
     justify-content: flex-start;
+
   }
+  @media (max-width:800px){
+    height: calc(50vh - 60px);
+
+  }
+ 
 }
+

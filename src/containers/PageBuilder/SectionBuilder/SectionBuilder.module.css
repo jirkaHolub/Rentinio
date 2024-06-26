@@ -101,7 +101,7 @@
     margin-top: 12px;
   }
   p.description:first-of-type {
-    margin-top: 0;
+    margin-top: 15px;
   }
 }
 
@@ -130,16 +130,21 @@
 .align {
   text-align: left;
   /* justify-self: start; */
-  justify-self: center;
+  justify-self: left;
 }
 
 .title {
   composes: align;
   max-width: 30ch;
   /* font-size: 9vw; */
-  font-size: 32px;
+  font-size: 30px;
   color: rgb(23, 33, 63);
-  font-weight: 600;
+  font-weight: 700;
+  justify-self: left;
+
+  @media (--viewportMedium) {
+    font-size: 30px;
+  }
 }
 
 .description {
@@ -149,6 +154,7 @@
   font-size: 18px;
   font-weight: 200;
   color: rgb(23, 33, 63);
+  
 }
 
 .ctaButton {
@@ -163,12 +169,11 @@
   text-decoration: none;
   box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
   font-weight: 500;
-  /* margin-top: 24px; */
-
-  width: 100%;
+  margin-top: 24px;
+  /* width: 30%; */
   text-align: center;
   height: min-content;
-  align-self: flex-end;
+  /*align-self: flex-end; */
 
   &:hover {
     text-decoration: none;
@@ -262,7 +267,7 @@
 }
 
 .darkTheme > div > img {
-  object-fit: cover;
+  object-fit:cover;
   object-position: 15%;
 
   @media (--viewportMedium) {
@@ -272,8 +277,8 @@
 }
 
 .darkTheme > div:last-of-type {
-  padding: 100px 0;
+  padding: 30px 0;
   @media (--viewportMedium) {
-    padding: 200px 0;
+    padding: 150px 0;
   }
 }

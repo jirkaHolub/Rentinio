@@ -4,10 +4,14 @@ import classNames from 'classnames';
 
 // Section components
 import SectionArticle from './SectionArticle';
+import SectionMyArticle from './SectionMyArticle';
 import SectionCarousel from './SectionCarousel';
 import SectionColumns from './SectionColumns';
 import SectionFeatures from './SectionFeatures';
 import SectionHero from './SectionHero';
+import SectionMyHero from './SectionMyHero';
+import SectionColumnsVideo from './SectionColumnsVideo';
+
 
 // Styles
 // Note: these contain
@@ -33,12 +37,13 @@ const DEFAULT_CLASSES = {
 /////////////////////////////////////////////
 
 const defaultSectionComponents = {
-  article: { component: SectionArticle },
+  article: { component: SectionMyArticle },
   carousel: { component: SectionCarousel },
   columns: { component: SectionColumns },
+  columnsVideo: { component: SectionColumnsVideo },
   features: { component: SectionFeatures },
   footer: { component: SectionFooter },
-  hero: { component: SectionHero },
+  hero: { component: SectionMyHero },
 };
 
 //////////////////////
@@ -117,7 +122,7 @@ const SectionBuilder = props => {
 const propTypeSection = shape({
   sectionId: string,
   sectionName: string,
-  sectionType: oneOf(['article', 'carousel', 'columns', 'features', 'hero']).isRequired,
+  sectionType: oneOf(['article', 'carousel', 'columns', 'columnsVideo', 'features', 'hero']).isRequired,
   // Plus all kind of unknown fields.
   // BlockBuilder doesn't really need to care about those
 });

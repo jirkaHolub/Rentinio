@@ -1,0 +1,51 @@
+@import '../../../../styles/customMediaQueries.css';
+
+.articleMain {
+  /* 720px + (2 * 32px) == 784 */
+  max-width: 784px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  @media (--viewportMedium) {
+    margin: 0;
+    padding: 0;
+    grid-template-columns: none;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.articleMain > div > div > h1 {
+  @media (--viewportMedium) {
+    font-size: 96px;
+    width: 100%;
+    margin: 0;
+    padding-right: 5vw;
+  }
+}  
+
+.noSidePaddings {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fullWidthText{
+  text-align: center;
+}
+.fullWidthText p {
+  color:rgb(23, 33, 63);
+  font-size: 100px; /* Apply font size to all <p> tags inside .fullWidthText */
+  display: inline;
+  line-height: 1; 
+  font-weight: var(--fontWeightBlack);
+  
+}
+
+.extra {
+  color: var(--marketplaceColor) !important;
+  font-size: 100px; /* Apply font size to elements with class .extra */
+  
+}

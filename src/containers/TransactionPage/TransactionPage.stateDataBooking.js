@@ -74,6 +74,7 @@ export const getStateDataForBookingProcess = (txInfo, processInfo) => {
         showReviewAsSecondLink: true,
         showActionButtons: true,
         primaryButtonProps: leaveReviewProps,
+    
       };
     })
     .cond([states.REVIEWED_BY_CUSTOMER, PROVIDER], () => {

@@ -20,14 +20,15 @@
 }
 
 .sectionContent {
-  padding: 32px 0;
+  /*padding: 32px 0; */
   position: relative;
   word-break: break-word;
   height: 100%;
 
+
   @media (--viewportMedium) {
-    padding: 64px 0 64px 5vw;
-    height: max-content;
+     padding: 64px 0 64px 5vw;
+    /* height: max-content; */
   }
 }
 
